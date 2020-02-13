@@ -1,7 +1,8 @@
-name: 'Hello universe!'
+# action.yml
+name: 'Hello Universe!'
 description: 'Greet the universe'
 inputs:
-  who-to-greet: # id of input
+  who-to-greet:  # id of input
     description: 'Who is greeting the universe'
     required: true
     default: 'Bob'
@@ -13,4 +14,3 @@ runs:
   image: 'Dockerfile'
   args:
     - ${{ inputs.who-to-greet }}
-
