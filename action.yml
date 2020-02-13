@@ -1,11 +1,11 @@
 # action.yml
-name: 'Hello Universe!'
-description: 'Greet the universe'
+name: 'Hello World'
+description: 'Greet someone and record the time'
 inputs:
   who-to-greet:  # id of input
-    description: 'Who is greeting the universe'
+    description: 'Who to greet'
     required: true
-    default: 'Bob'
+    default: 'World'
 outputs:
   time: # id of output
     description: 'The time we greeted you'
