@@ -1,14 +1,14 @@
 on: [push]
 
 jobs:
-	hello_universe_job:
-		runs-on: alpine-latest
-		name: A job to greet the universe
-		steps:
-		- name: Hello universe action step
-			id: hello
-			uses: brandon-vargas/hello-universe-action@v1
-			with:
-				who-to-greet: 'Mr. Programmer'
-		- name: Get the output time
-			run: echo "The time was ${{ steps.hello.outputs.time }}"
+  hello_universe_job:
+  runs-on: alpine-latest
+  name: A job to greet the universe
+  steps:
+  - name: Hello universe action step
+   id: hello
+   uses: brandon-vargas/hello-universe-action@v1
+   with:
+    who-to-greet: 'Mr. Programmer'
+  - name: Get the output time
+   run: echo "The time was ${{ steps.hello.outputs.time }}"
