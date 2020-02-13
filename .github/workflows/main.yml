@@ -7,7 +7,7 @@ jobs:
     steps:
     - name: Hello universe action step
       id: hello
-      uses: brandon-vargas/hello-universe-action@v1
+      uses: brandon-vargas/hello-universe-action@v4
       with:
         who-to-greet: 'Mr. Programmer'
     # Use the output from the `hello` step
